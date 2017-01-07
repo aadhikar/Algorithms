@@ -1,6 +1,7 @@
 # Algorithms
-reverseString
-factorializeNumber
-checkForPalindromes
-findTheLongestWordInString
-titleCaseSentence
+* reverseString
+* factorializeNumber
+* checkForPalindromes
+* findTheLongestWordInString
+* titleCaseSentence
+* returnLargestNumbersInArrays
