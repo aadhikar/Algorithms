@@ -21,7 +21,9 @@
 
 * [slasherFlick](https://www.freecodecamp.com/challenges/slasher-flick#?solution=%0Afunction%20slasher(arr%2C%20howMany)%20%7B%0A%20%20%2F%2F%20it%20doesn't%20always%20pay%20to%20be%20first%0A%20%20arr.splice(0%2C%20howMany)%3B%0A%20%20return%20arr%3B%0A%7D%0A%0Aslasher(%5B1%2C%202%2C%203%5D%2C%202)%3B%0A).
 
-For more details visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
+* [mutations](https://www.freecodecamp.com/challenges/mutations#?solution=%0Afunction%20mutation(arr)%20%7B%0A%20%20var%20str0%20%3D%20arr%5B0%5D.toLowerCase().split('')%3B%0A%20%20var%20str1%20%3D%20arr%5B1%5D.toLowerCase().split('')%3B%0A%20%20var%20count%20%3D%200%3B%0A%20%20for%20(var%20i%20%3D%200%3B%20i%20%3C%20str1.length%3B%20i%2B%2B)%20%7B%0A%20%20%20%20if%20(str0.indexOf(str1%5Bi%5D)%20%3E%20-1)%20%7B%0A%20%20%20%20%20%20count%2B%2B%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20return%20count%20%3D%3D%3D%20str1.length%3B%0A%7D%0A%0Amutation(%5B%22hello%22%2C%20%22hey%22%5D)%3B%0A).
+
+For more details please visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
 
 <!-- 
 * [link](url).
