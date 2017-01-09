@@ -10,3 +10,19 @@
 * [titleCaseSentence](https://www.freecodecamp.com/challenges/Title%20Case%20a%20Sentence?solution=%0Afunction%20titleCase(str)%20%7B%0A%20%20return%20str.replace(%2F%5Cw%5CS*%2Fg%2C%20function(txt)%20%7B%0A%20%20%20%20return%20txt.charAt(0).toUpperCase()%20%2B%20txt.substr(1).toLowerCase()%3B%0A%20%20%7D)%3B%0A%7D%0A%0AtitleCase(%22I%27m%20a%20little%20tea%20pot%22)%3B%0A).
 
 * [returnLargestNumbersInArrays](https://www.freecodecamp.com/challenges/Return%20Largest%20Numbers%20in%20Arrays?solution=%0Afunction%20largestOfFour(arr)%20%7B%0A%20%20%2F%2F%20You%20can%20do%20this!%0A%20%20var%20LargestArr%20%3D%20%5B%5D%3B%0A%20%20arr.map(function(val)%7B%0A%20%20%20%20var%20result%20%3D%20val.reduce(function(accumulator%2C%20currentValue)%7B%0A%20%20%20%20%20%20return%20(accumulator%20%3E%20currentValue%20%3F%20accumulator%20%3A%20currentValue)%3B%0A%20%20%20%20%20%20%7D)%3B%0A%20%20%20%20LargestArr.push(result)%3B%0A%20%20%20%20%7D)%3B%0A%20%20return%20LargestArr%3B%0A%20%20%7D%0A%0AlargestOfFour(%5B%5B4%2C%205%2C%201%2C%203%5D%2C%20%5B13%2C%2027%2C%2018%2C%2026%5D%2C%20%5B32%2C%2035%2C%2037%2C%2039%5D%2C%20%5B1000%2C%201001%2C%20857%2C%201%5D%5D)%3B%0A).
+
+* [confirmTheEnding](https://www.freecodecamp.com/challenges/confirm-the-ending#?solution=%0Afunction%20confirmEnding(str%2C%20target)%20%7B%0A%20%20%2F%2F%20%22Never%20give%20up%20and%20good%20luck%20will%20find%20you.%22%0A%20%20%2F%2F%20--%20Falcor%0A%20%20return%20str.substring(str.length%20-%20target.length%2C%20str.length)%20%3D%3D%3D%20target%3B%0A%7D%0A%0AconfirmEnding(%22Bastian%22%2C%20%22n%22)%3B%0A).
+
+* [repeatStringRepeatString](https://www.freecodecamp.com/challenges/repeat-a-string-repeat-a-string#?solution=%0Afunction%20repeatStringNumTimes(str%2C%20num)%20%7B%0A%20%20%2F%2F%20repeat%20after%20me%0A%20%20var%20repeatedStr%20%3D%20''%3B%0A%20%20if%20(num%20%3C%200)%20%7B%0A%20%20%20%20return%20repeatedStr%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20for%20(var%20count%20%3D%200%3B%20count%20%3C%20num%3B%20count%2B%2B)%20%7B%0A%20%20%20%20%20%20repeatedStr%20%2B%3D%20str%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20return%20repeatedStr%3B%0A%7D%0A%0ArepeatStringNumTimes(%22abc%22%2C%203)%3B%0A).
+
+* [truncateString](https://www.freecodecamp.com/challenges/truncate-a-string#?solution=%0Afunction%20truncateString(str%2C%20num)%20%7B%0A%20%20%2F%2F%20Clear%20out%20that%20junk%20in%20your%20trunk%0A%20%20if%20(str.length%20%3C%3D%20num)%20%7B%0A%20%20%20%20return%20str%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20return%20str.slice(0%2C%20num%20%3E%203%20%3F%20num%20-%203%20%3A%20num)%20%2B%20'...'%3B%0A%20%20%7D%0A%7D%0A%0AtruncateString(%22A-tisket%20a-tasket%20A%20green%20and%20yellow%20basket%22%2C%2011)%3B%0A).
+
+* [chunkyMonkey](https://www.freecodecamp.com/challenges/chunky-monkey#?solution=function%20chunkArrayInGroups(arr%2C%20size)%20%7B%0A%20%20%2F%2F%20Break%20it%20up.%0A%20%20var%20result%20%3D%20%5B%5D%3B%0A%20%20for%20(var%20i%20%3D%200%3B%20i%20%3C%20arr.length%3B%20i%20%3D%20i%20%2B%20size)%20%7B%0A%20%20%20%20result.push(arr.slice(i%2C%20i%20%2B%20size))%3B%0A%20%20%7D%0A%20%20return%20result%3B%0A%7D%0A%0AchunkArrayInGroups(%5B'a'%2C%20'b'%2C%20'c'%2C%20'd'%5D%2C%202)%3B%0A).
+
+* [slasherFlick](https://www.freecodecamp.com/challenges/slasher-flick#?solution=%0Afunction%20slasher(arr%2C%20howMany)%20%7B%0A%20%20%2F%2F%20it%20doesn't%20always%20pay%20to%20be%20first%0A%20%20arr.splice(0%2C%20howMany)%3B%0A%20%20return%20arr%3B%0A%7D%0A%0Aslasher(%5B1%2C%202%2C%203%5D%2C%202)%3B%0A).
+
+For more details visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
+
+<!-- 
+* [link](url).
+  -->
