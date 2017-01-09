@@ -1,7 +1,12 @@
 # Algorithms
-* reverseString
-* factorializeNumber
-* checkForPalindromes
-* findTheLongestWordInString
-* titleCaseSentence
-* returnLargestNumbersInArrays
+* [reverseString](https://www.freecodecamp.com/challenges/reverse-a-string#?solution=%0Afunction%20reverseString(str)%20%7B%0A%2F%2F%20%20%20var%20result%20%3D%20%22%22%3B%0A%2F%2F%20%20%20for(var%20i%20%3D%20str.length%3B%20i%3E%3D%200%3B%20i--)%7B%0A%2F%2F%20%20%20%20%20result%20%2B%3D%20str.charAt(i)%3B%0A%2F%2F%20%20%20%7D%0A%2F%2F%20%20%20return%20result%3B%0A%20%20var%20splitedString%20%3D%20%5B%5D%3B%0A%20%20var%20reversedString%20%3D%20%5B%5D%3B%0A%20%20splitedString%20%3D%20str.split(%22%22)%3B%0A%20%20reversedString%20%3D%20splitedString.reverse()%3B%0A%20%20return%20reversedString.join(%22%22)%3B%0A%7D%0A%0AreverseString(%22hello%22)%3B%0AreverseString(%22Greetings%20from%20Earth%22)%3B%0A).
+
+* [factorializeNumber](https://www.freecodecamp.com/challenges/Factorialize%20a%20Number?solution=%0Afunction%20factorialize(num)%20%7B%0A%20%20if(num%20%3C%200)%7B%0A%20%20%20%20return%20-1%3B%0A%20%20%7D%20else%20if(num%20%3D%3D%3D%200)%20%7B%0A%20%20%20%20return%201%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20return%20(num%20*%20factorialize(num%20-%201))%3B%0A%20%20%7D%0A%7D%0A%0Afactorialize(5)%3B%0A).
+
+* [checkForPalindromes](https://www.freecodecamp.com/challenges/Check%20for%20Palindromes?solution=%0Afunction%20palindrome(str)%20%7B%0A%20%20%2F%2F%20Good%20luck!%0A%20%20%0A%20%20%20%20return%20str.replace(%2F%5B%5CW_%5D%2Fg%2C%20%27%27).toLowerCase()%20%3D%3D%3D%20str.replace(%2F%5B%5CW_%5D%2Fg%2C%20%27%27).toLowerCase().split(%27%27).reverse().join(%27%27)%3B%0A%20%20%0A%20%20%0A%7D%0A%0A%0A%0Apalindrome(%22_eye%22)%3B%0A).
+
+* [findTheLongestWordInString](https://www.freecodecamp.com/challenges/Find%20the%20Longest%20Word%20in%20a%20String?solution=%0Afunction%20findLongestWord(str)%20%7B%0A%20%20str%20%3D%20str.split(%22%20%22).reduce(function%20(accumulator%2C%20currentValue)%20%7B%0A%20%20%20%20return%20accumulator.length%20%3E%20currentValue.length%20%3F%20accumulator%20%3A%20currentValue%3B%0A%20%20%20%20%7D)%3B%0A%20%20return%20str.length%3B%0A%7D%0A%0AfindLongestWord(%22The%20quick%20brown%20fox%20jumped%20over%20the%20lazy%20dog%22)%3B%0A).
+
+* [titleCaseSentence](https://www.freecodecamp.com/challenges/Title%20Case%20a%20Sentence?solution=%0Afunction%20titleCase(str)%20%7B%0A%20%20return%20str.replace(%2F%5Cw%5CS*%2Fg%2C%20function(txt)%20%7B%0A%20%20%20%20return%20txt.charAt(0).toUpperCase()%20%2B%20txt.substr(1).toLowerCase()%3B%0A%20%20%7D)%3B%0A%7D%0A%0AtitleCase(%22I%27m%20a%20little%20tea%20pot%22)%3B%0A).
+
+* [returnLargestNumbersInArrays](https://www.freecodecamp.com/challenges/Return%20Largest%20Numbers%20in%20Arrays?solution=%0Afunction%20largestOfFour(arr)%20%7B%0A%20%20%2F%2F%20You%20can%20do%20this!%0A%20%20var%20LargestArr%20%3D%20%5B%5D%3B%0A%20%20arr.map(function(val)%7B%0A%20%20%20%20var%20result%20%3D%20val.reduce(function(accumulator%2C%20currentValue)%7B%0A%20%20%20%20%20%20return%20(accumulator%20%3E%20currentValue%20%3F%20accumulator%20%3A%20currentValue)%3B%0A%20%20%20%20%20%20%7D)%3B%0A%20%20%20%20LargestArr.push(result)%3B%0A%20%20%20%20%7D)%3B%0A%20%20return%20LargestArr%3B%0A%20%20%7D%0A%0AlargestOfFour(%5B%5B4%2C%205%2C%201%2C%203%5D%2C%20%5B13%2C%2027%2C%2018%2C%2026%5D%2C%20%5B32%2C%2035%2C%2037%2C%2039%5D%2C%20%5B1000%2C%201001%2C%20857%2C%201%5D%5D)%3B%0A).
