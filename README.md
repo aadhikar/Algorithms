@@ -25,7 +25,7 @@
 
 * [falsyBouncer](https://www.freecodecamp.com/challenges/Falsy%20Bouncer?solution=%0Afunction%20bouncer(arr)%20%7B%0A%20%20%2F%2F%20Don%27t%20show%20a%20false%20ID%20to%20this%20bouncer.%0A%20%20return%20arr.filter(function(val)%20%7B%0A%20%20%20%20return%20!!val%3B%0A%20%20%7D)%3B%0A%7D%0A%0Abouncer(%5B7%2C%20%22ate%22%2C%20%22%22%2C%20false%2C%209%5D)%3B%0A).
 
-* [link](url).
+* [seekAndDestroy](https://www.freecodecamp.com/challenges/Seek%20and%20Destroy?solution=%0Afunction%20destroyer(arr)%20%7B%0A%20%20%2F%2F%20Remove%20all%20the%20values%0A%20%20var%20args%20%3D%20Array.prototype.slice.call(arguments)%3B%0A%20%20return%20arr.filter(function(element)%20%7B%0A%20%20%20%20return%20args.indexOf(element)%20%3E%20-1%20%3F%20%27%27%20%3A%20element%3B%0A%20%20%7D)%3B%0A%7D%0A%0Adestroyer(%5B1%2C%202%2C%203%2C%201%2C%202%2C%203%5D%2C%202%2C%203)%3B%0A).
 
 For more details please visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
 
