@@ -23,6 +23,10 @@
 
 * [mutations](https://www.freecodecamp.com/challenges/mutations#?solution=%0Afunction%20mutation(arr)%20%7B%0A%20%20var%20str0%20%3D%20arr%5B0%5D.toLowerCase().split('')%3B%0A%20%20var%20str1%20%3D%20arr%5B1%5D.toLowerCase().split('')%3B%0A%20%20var%20count%20%3D%200%3B%0A%20%20for%20(var%20i%20%3D%200%3B%20i%20%3C%20str1.length%3B%20i%2B%2B)%20%7B%0A%20%20%20%20if%20(str0.indexOf(str1%5Bi%5D)%20%3E%20-1)%20%7B%0A%20%20%20%20%20%20count%2B%2B%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20return%20count%20%3D%3D%3D%20str1.length%3B%0A%7D%0A%0Amutation(%5B%22hello%22%2C%20%22hey%22%5D)%3B%0A).
 
+* [falsyBouncer](https://www.freecodecamp.com/challenges/Falsy%20Bouncer?solution=%0Afunction%20bouncer(arr)%20%7B%0A%20%20%2F%2F%20Don%27t%20show%20a%20false%20ID%20to%20this%20bouncer.%0A%20%20return%20arr.filter(function(val)%20%7B%0A%20%20%20%20return%20!!val%3B%0A%20%20%7D)%3B%0A%7D%0A%0Abouncer(%5B7%2C%20%22ate%22%2C%20%22%22%2C%20false%2C%209%5D)%3B%0A).
+
+* [link](url).
+
 For more details please visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
 
 <!-- 
