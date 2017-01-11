@@ -33,6 +33,8 @@
 
 * [sumAllNumbersInRange](https://www.freecodecamp.com/challenges/sum-all-numbers-in-a-range#?solution=%0Afunction%20sumAll(arr)%20%7B%0A%20%20var%20arrSeq%20%3D%20%5B%5D%3B%0A%20%20for(var%20i%20%3D%20Math.min.apply(null%2C%20arr)%3B%20i%20%3C%3D%20Math.max.apply(null%2C%20arr)%3B%20i%2B%2B)%7B%0A%20%20%20%20arrSeq.push(i)%3B%0A%20%20%7D%0A%20%20return%20arrSeq.reduce(function(acc%2C%20pre)%7B%0A%20%20%20%20return%20acc%20%2B%20pre%3B%0A%20%20%7D%2C%200)%3B%0A%7D%0A%0AsumAll(%5B1%2C%204%5D)%3B%0A).
 
+* [diffTwoArrays](https://www.freecodecamp.com/challenges/Diff%20Two%20Arrays?solution=%0Afunction%20diffArray(arr1%2C%20arr2)%20%7B%0A%20%20var%20newArr%20%3D%20%5B%5D%3B%0A%20%20%2F%2F%20Same%2C%20same%3B%20but%20different.%0A%20%20var%20firstArray%2C%20secondArray%3B%0A%20%20if%20(arr1.length%20%3E%3D%20arr2.length)%20%7B%0A%20%20%20%20firstArray%20%3D%20arr1%3B%0A%20%20%20%20secondArray%20%3D%20arr2%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20firstArray%20%3D%20arr2%3B%0A%20%20%20%20secondArray%20%3D%20arr1%3B%0A%20%20%7D%0A%20%20var%20firstArrayResult%20%3D%20firstArray.filter(function(first)%20%7B%0A%20%20%20%20return%20secondArray.indexOf(first)%20%3C%200%20%3F%20first%20%3A%20%27%27%3B%0A%20%20%7D)%3B%0A%20%20var%20secondArrayResult%20%3D%20secondArray.filter(function(second)%20%7B%0A%20%20%20%20return%20firstArray.indexOf(second)%20%3C%200%20%3F%20second%20%3A%20%27%27%3B%0A%20%20%7D)%3B%0A%20%20return%20newArr.concat(firstArrayResult%2C%20secondArrayResult)%3B%0A%7D%0A%0AdiffArray(%5B1%2C%202%2C%203%2C%205%5D%2C%20%5B1%2C%202%2C%203%2C%204%2C%205%5D)%3B%0A).
+
 For more details please visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
 
 <!-- 
