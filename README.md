@@ -27,6 +27,8 @@
 
 * [seekAndDestroy](https://www.freecodecamp.com/challenges/Seek%20and%20Destroy?solution=%0Afunction%20destroyer(arr)%20%7B%0A%20%20%2F%2F%20Remove%20all%20the%20values%0A%20%20var%20args%20%3D%20Array.prototype.slice.call(arguments)%3B%0A%20%20return%20arr.filter(function(element)%20%7B%0A%20%20%20%20return%20args.indexOf(element)%20%3E%20-1%20%3F%20%27%27%20%3A%20element%3B%0A%20%20%7D)%3B%0A%7D%0A%0Adestroyer(%5B1%2C%202%2C%203%2C%201%2C%202%2C%203%5D%2C%202%2C%203)%3B%0A).
 
+* [whereDoIBelong](https://www.freecodecamp.com/challenges/Where%20do%20I%20belong?solution=%0Afunction%20getIndexToIns(arr%2C%20num)%20%7B%0A%20%20%2F%2F%20Find%20my%20place%20in%20this%20sorted%20array.%0A%20%20arr.sort(function(a%2C%20b)%20%7B%0A%20%20%20%20return%20(a%20-%20b)%3B%0A%20%20%7D)%3B%0A%20%20for%20(var%20i%20%3D%200%3B%20i%20%3C%3D%20arr.length%3B%20i%2B%2B)%20%7B%0A%20%20%20%20if%20(num%20%3C%3D%20arr%5Bi%5D)%20%7B%0A%20%20%20%20%20%20return%20i%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20return%20arr.length%3B%0A%7D%0A%0AgetIndexToIns(%5B40%2C%2060%5D%2C%2050)%3B%0A).
+
 For more details please visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
 
 <!-- 
