@@ -41,6 +41,8 @@
 
 * [searchAndReplace](https://www.freecodecamp.com/challenges/search-and-replace#?solution=%0Afunction%20myReplace(str%2C%20before%2C%20after)%20%7B%0A%20%20var%20re%20%3D%20new%20RegExp(before%2C%20'gi')%3B%0A%20%20if%20(str.indexOf(before)%20%3E%200)%20%7B%0A%20%20%20%20if%20(%2F%5BA-Z%5D%2F.test(before%5B0%5D))%20%7B%0A%20%20%20%20%20%20after%20%3D%20after.charAt(0).toUpperCase()%20%2B%20after.slice(1)%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20return%20str.replace(re%2C%20after)%3B%0A%7D%0A%0AmyReplace(%22A%20quick%20brown%20fox%20jumped%20over%20the%20lazy%20dog%22%2C%20%22jumped%22%2C%20%22leaped%22)%3B%0A).
 
+* [pigLatin](https://www.freecodecamp.com/challenges/pig-latin#?solution=%0Afunction%20translatePigLatin(str)%20%7B%0A%20%20var%20regEx%20%3D%20(%2F%5E%5Baeiou%5D%24%2Fi)%3B%0A%20%20for%20(var%20i%20%3D%200%3B%20i%20%3C%3D%20str.length%20-%201%3B%20i%2B%2B)%20%7B%0A%20%20%20%20if%20(regEx.test(str%5B0%5D))%20%7B%0A%20%20%20%20%20%20return%20str%20%2B%20'way'%3B%0A%20%20%20%20%7D%20else%20if%20(regEx.test(str%5Bi%5D))%20%7B%0A%20%20%20%20%20%20return%20str.substring(i)%20%2B%20str.substring(0%2C%20i)%20%2B%20'ay'%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A%0AtranslatePigLatin(%22consonant%22)%3B%0A).
+
 For more details please visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
 
 <!-- 
