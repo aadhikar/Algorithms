@@ -53,6 +53,8 @@
 
 * [convertHtmlEntities](https://www.freecodecamp.com/challenges/Convert%20HTML%20Entities?solution=%0Afunction%20convertHTML(str)%20%7B%0A%20%20%2F%2F%20%26colon%3B%26rpar%3B%0A%0A%20%20return%20str.split(%27%27).map(function(val)%20%7B%0A%20%20%20%20switch%20(val)%20%7B%0A%20%20%20%20%20%20case%20%27%3C%27%3A%0A%20%20%20%20%20%20%20%20val%20%3D%20%27%26lt%3B%27%3B%0A%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%20%20case%20%27%26%27%3A%0A%20%20%20%20%20%20%20%20val%20%3D%20%27%26amp%3B%27%3B%0A%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%20%20case%20%27%3E%27%3A%0A%20%20%20%20%20%20%20%20val%20%3D%20%27%26gt%3B%27%3B%0A%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%20%20case%20%27%22%27%3A%0A%20%20%20%20%20%20%20%20val%20%3D%20%27%26quot%3B%27%3B%0A%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%20%20case%20%22%27%22%3A%0A%20%20%20%20%20%20%20%20val%20%3D%20%22%26apos%3B%22%3B%0A%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%7D%0A%20%20%20%20return%20val%3B%0A%20%20%7D).join(%27%27)%3B%0A%7D%0A%0AconvertHTML(%22Dolce%20%26%20Gabbana%22)%3B%0A).
 
+* [spinalTapCase](https://www.freecodecamp.com/challenges/Spinal%20Tap%20Case?solution=%0Afunction%20spinalCase(str)%20%7B%0A%20%20%2F%2F%20%22It%27s%20such%20a%20fine%20line%20between%20stupid%2C%20and%20clever.%22%0A%20%20%2F%2F%20--David%20St.%20Hubbins%0A%20%20str%20%3D%20str.replace(%2F(%5Ba-z%5D)(%5BA-Z%5D)%2Fg%2C%20%27%241%20%242%27)%3B%0A%20%20return%20str.toLowerCase().replace(%2F%5Cs%2B%7C_%2B%2Fg%2C%20%27-%27)%3B%0A%7D%0A%0AspinalCase(%27This%20Is%20Spinal%20Tap%27)%3B%0A).
+
 For more details please visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
 
 <!-- 
