@@ -43,6 +43,8 @@
 
 * [pigLatin](https://www.freecodecamp.com/challenges/pig-latin#?solution=%0Afunction%20translatePigLatin(str)%20%7B%0A%20%20var%20regEx%20%3D%20(%2F%5E%5Baeiou%5D%24%2Fi)%3B%0A%20%20for%20(var%20i%20%3D%200%3B%20i%20%3C%3D%20str.length%20-%201%3B%20i%2B%2B)%20%7B%0A%20%20%20%20if%20(regEx.test(str%5B0%5D))%20%7B%0A%20%20%20%20%20%20return%20str%20%2B%20'way'%3B%0A%20%20%20%20%7D%20else%20if%20(regEx.test(str%5Bi%5D))%20%7B%0A%20%20%20%20%20%20return%20str.substring(i)%20%2B%20str.substring(0%2C%20i)%20%2B%20'ay'%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A%0AtranslatePigLatin(%22consonant%22)%3B%0A).
 
+* [dnaPairing](https://www.freecodecamp.com/challenges/dna-pairing#?solution=%0Afunction%20pairElement(str)%20%7B%0A%20%20var%20A%20%3D%20%5B'A'%2C%20'T'%5D%3B%0A%20%20var%20T%20%3D%20%5B'T'%2C%20'A'%5D%3B%0A%20%20var%20G%20%3D%20%5B'G'%2C%20'C'%5D%3B%0A%20%20var%20C%20%3D%20%5B'C'%2C%20'G'%5D%3B%0A%20%20var%20res%20%3D%20%5B%5D%3B%0A%20%20for%20(var%20i%20%3D%200%3B%20i%20%3C%3D%20str.length%20-%201%3B%20i%2B%2B)%20%7B%0A%20%20%20%20switch%20(str%5Bi%5D)%20%7B%0A%20%20%20%20%20%20case%20'A'%3A%0A%20%20%20%20%20%20%20%20res.push(A)%3B%0A%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%20%20case%20'T'%3A%0A%20%20%20%20%20%20%20%20res.push(T)%3B%0A%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%20%20case%20'G'%3A%0A%20%20%20%20%20%20%20%20res.push(G)%3B%0A%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%20%20default%3A%0A%20%20%20%20%20%20%20%20res.push(C)%3B%0A%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20return%20res%3B%0A%7D%0A%0ApairElement(%22GCG%22)%3B%0A).
+
 For more details please visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
 
 <!-- 
