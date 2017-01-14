@@ -49,6 +49,8 @@
 
 * [booWho](https://www.freecodecamp.com/challenges/Boo%20who?solution=%0Afunction%20booWho(bool)%20%7B%0A%20%20%2F%2F%20What%20is%20the%20new%20fad%20diet%20for%20ghost%20developers%3F%20The%20Boolean.%0A%20%20return%20typeof%20bool%20%3D%3D%3D%20%27boolean%27%20%3F%20true%20%3A%20false%3B%0A%7D%0A%0AbooWho(null)%3B%0A).
 
+* [sortedUnion ](https://www.freecodecamp.com/challenges/Sorted%20Union?solution=%0Afunction%20uniteUnique(arr)%20%7B%0A%20%20var%20args%20%3D%20Array.prototype.slice.call(arguments)%3B%0A%20%20var%20res%20%3D%20args%5B0%5D%3B%0A%20%20args.map(function(val)%20%7B%0A%20%20%20%20val.reduce(function(accumulator%2C%20currentValue%2C%20currentIndex%2C%20array)%20%7B%0A%20%20%20%20%20%20return%20array.map(function(val)%20%7B%0A%20%20%20%20%20%20%20%20if%20(res.indexOf(val)%20%3C%200)%20%7B%0A%20%20%20%20%20%20%20%20%20%20res.push(val)%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D)%3B%0A%20%20%20%20%7D)%3B%0A%20%20%7D)%3B%0A%20%20return%20res%3B%0A%7D%0A%0AuniteUnique(%5B1%2C%203%2C%202%5D%2C%20%5B5%2C%202%2C%201%2C%204%5D%2C%20%5B2%2C%201%5D)%3B%0A).
+
 For more details please visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
 
 <!-- 
