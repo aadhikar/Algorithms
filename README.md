@@ -47,6 +47,8 @@
 
 * [missingLetters](https://www.freecodecamp.com/challenges/Missing%20letters?solution=%0Afunction%20fearNotLetter(str)%20%7B%0A%20%20if%20(%2F%5Ba-z%5D%2Fi.test(str))%20%7B%0A%20%20%20%20var%20i%20%3D%20str.charCodeAt(0)%3B%0A%20%20%20%20var%20j%20%3D%200%3B%0A%20%20%20%20while%20(i%20%3C%3D%20122%20%26%26%20j%20%3C%3D%20str.length%20-%201)%20%7B%0A%20%20%20%20%20%20if%20(String.fromCharCode(i)%20!%3D%3D%20str.charAt(j))%20%7B%0A%20%20%20%20%20%20%20%20return%20String.fromCharCode(i)%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20i%2B%2B%3B%0A%20%20%20%20%20%20j%2B%2B%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20return%20undefined%3B%0A%7D%0A%0AfearNotLetter(%22abce%22)%3B%0A).
 
+* [booWho](https://www.freecodecamp.com/challenges/Boo%20who?solution=%0Afunction%20booWho(bool)%20%7B%0A%20%20%2F%2F%20What%20is%20the%20new%20fad%20diet%20for%20ghost%20developers%3F%20The%20Boolean.%0A%20%20return%20typeof%20bool%20%3D%3D%3D%20%27boolean%27%20%3F%20true%20%3A%20false%3B%0A%7D%0A%0AbooWho(null)%3B%0A).
+
 For more details please visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
 
 <!-- 
