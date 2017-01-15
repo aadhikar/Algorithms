@@ -67,6 +67,8 @@
 
 * [steamroller](https://www.freecodecamp.com/challenges/Steamroller?solution=%0Afunction%20steamrollArray(arr)%20%7B%0A%20%20%2F%2F%20I%27m%20a%20steamroller%2C%20baby%0A%20%20return%20arr.reduce(function(prev%2C%20curr)%20%7B%0A%20%20%20%20return%20prev.concat(Array.isArray(curr)%20%3F%20steamrollArray(curr)%20%3A%20curr)%3B%0A%20%20%7D%2C%20%5B%5D)%3B%0A%7D%0A%0AsteamrollArray(%5B1%2C%20%5B2%5D%2C%20%5B3%2C%20%5B%5B4%5D%5D%5D%5D)%3B%0A).
 
+* [binaryAgents](https://www.freecodecamp.com/challenges/Binary%20Agents?solution=%0Afunction%20binaryAgent(str)%20%7B%0A%20%20return%20str.split(%27%20%27).map(function(val)%7B%0A%20%20%20%20%20%20return%20String.fromCharCode(parseInt(val%2C2).toString(10))%3B%0A%20%20%7D).join(%27%27)%3B%0A%7D%0A%0AbinaryAgent(%2201000001%2001110010%2001100101%2001101110%2000100111%2001110100%2000100000%2001100010%2001101111%2001101110%2001100110%2001101001%2001110010%2001100101%2001110011%2000100000%2001100110%2001110101%2001101110%2000100001%2000111111%22)%3B%0A).
+
 For more details please visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
 
 <!-- 
