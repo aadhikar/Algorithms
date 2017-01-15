@@ -75,6 +75,8 @@
 
 * [validateUSTelephoneNumbers](https://www.freecodecamp.com/challenges/Validate%20US%20Telephone%20Numbers?solution=%0Afunction%20telephoneCheck(str)%20%7B%0A%20%20%2F%2F%20Good%20luck!%0A%20%20return%20%2F%5E(1%5Cs%7C1%7C)%3F((%5C(%5Cd%7B3%7D%5C))%7C%5Cd%7B3%7D)(%5C-%7C%5Cs)%3F(%5Cd%7B3%7D)(%5C-%7C%5Cs)%3F(%5Cd%7B4%7D)%24%2F.test(str)%3B%0A%7D%0A%0A%0A%0AtelephoneCheck(%22555-555-5555%22)%3B%0A).
 
+* [symmetricDifference](https://www.freecodecamp.com/challenges/Symmetric%20Difference?solution=%0Afunction%20sym(args)%20%7B%0A%20%20var%20arg%20%3D%20(arguments.length%20%3D%3D%3D%201%20%3F%20%5Barguments%5B0%5D%5D%20%3A%20Array.apply(null%2C%20arguments))%3B%0A%20%20return%20arg.reduce(function(preVal%2C%20curVal)%20%7B%0A%20%20%20%20var%20result%20%3D%20%5B%5D%3B%0A%0A%20%20%20%20preVal.map(function(val)%20%7B%0A%20%20%20%20%20%20return%20curVal.indexOf(val)%20%3C%200%20%26%26%20result.indexOf(val)%20%3C%200%20%3F%20result.push(val)%20%3A%20false%3B%0A%20%20%20%20%7D)%3B%0A%0A%20%20%20%20curVal.map(function(val)%20%7B%0A%20%20%20%20%20%20return%20preVal.indexOf(val)%20%3C%200%20%26%26%20result.indexOf(val)%20%3C%200%20%3F%20result.push(val)%20%3A%20false%3B%0A%20%20%20%20%7D)%3B%0A%0A%20%20%20%20return%20result%3B%0A%20%20%7D)%3B%0A%7D%0A%0Asym(%5B1%2C%202%2C%203%5D%2C%20%5B5%2C%202%2C%201%2C%204%5D)%3B%0A).
+
 For more details please visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
 
 <!-- 
