@@ -69,6 +69,8 @@
 
 * [binaryAgents](https://www.freecodecamp.com/challenges/Binary%20Agents?solution=%0Afunction%20binaryAgent(str)%20%7B%0A%20%20return%20str.split(%27%20%27).map(function(val)%7B%0A%20%20%20%20%20%20return%20String.fromCharCode(parseInt(val%2C2).toString(10))%3B%0A%20%20%7D).join(%27%27)%3B%0A%7D%0A%0AbinaryAgent(%2201000001%2001110010%2001100101%2001101110%2000100111%2001110100%2000100000%2001100010%2001101111%2001101110%2001100110%2001101001%2001110010%2001100101%2001110011%2000100000%2001100110%2001110101%2001101110%2000100001%2000111111%22)%3B%0A).
 
+* [everythingBeTrue](https://www.freecodecamp.com/challenges/Everything%20Be%20True?solution=%0Afunction%20truthCheck(collection%2C%20pre)%20%7B%0A%20%20%2F%2F%20Is%20everyone%20being%20true%3F%0A%20%20return%20collection.every(function(val)%20%7B%0A%20%20%20%20return%20val%5Bpre%5D%3B%0A%20%20%7D)%3B%0A%7D%0A%0AtruthCheck(%5B%7B%22user%22%3A%20%22Tinky-Winky%22%2C%20%22sex%22%3A%20%22male%22%7D%2C%20%7B%22user%22%3A%20%22Dipsy%22%2C%20%22sex%22%3A%20%22male%22%7D%2C%20%7B%22user%22%3A%20%22Laa-Laa%22%2C%20%22sex%22%3A%20%22female%22%7D%2C%20%7B%22user%22%3A%20%22Po%22%2C%20%22sex%22%3A%20%22female%22%7D%5D%2C%20%22sex%22)%3B%0A).
+
 For more details please visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
 
 <!-- 
