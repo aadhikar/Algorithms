@@ -57,6 +57,8 @@
 
 * [sumAllOddFibonacciNumbers](https://www.freecodecamp.com/challenges/Sum%20All%20Odd%20Fibonacci%20Numbers?solution=%0Afunction%20sumFibs(num)%20%7B%0A%20%20var%20prev%20%3D%200%3B%0A%20%20var%20curr%20%3D%201%3B%0A%20%20var%20temp%20%3D%200%3B%0A%20%20var%20result%20%3D%200%3B%0A%20%20if%20(num%20%3D%3D%3D%201)%20%7B%0A%20%20%20%20result%20%3D%201%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20while%20(temp%20%3C%3D%20num)%20%7B%0A%20%20%20%20%20%20if%20(curr%20%25%202%20%3D%3D%3D%201)%20%7B%0A%20%20%20%20%20%20%20%20result%20%2B%3D%20curr%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20temp%20%3D%20curr%20%2B%20prev%3B%0A%20%20%20%20%20%20prev%20%3D%20curr%3B%0A%20%20%20%20%20%20curr%20%3D%20temp%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20return%20result%3B%0A%7D%0A%0AsumFibs(4)%3B%0A).
 
+* [sumAllPrimes](https://www.freecodecamp.com/challenges/Sum%20All%20Primes?solution=%0Afunction%20sumPrimes(num)%20%7B%0A%20%20var%20count%20%3D%200%3B%0A%20%20var%20res%20%3D%200%3B%0A%20%20var%20flag%3B%0A%20%20for%20(var%20i%20%3D%202%3B%20i%20%3C%3D%20num%3B%20i%2B%2B)%20%7B%0A%20%20%20%20flag%20%3D%20true%3B%0A%20%20%20%20for%20(var%20j%20%3D%202%3B%20j%20%3C%20i%3B%20j%2B%2B)%20%7B%0A%20%20%20%20%20%20if%20(i%20%25%20j%20%3D%3D%3D%200)%20%7B%0A%20%20%20%20%20%20%20%20flag%20%3D%20false%3B%0A%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20if%20(flag)%20%7B%0A%20%20%20%20%20%20res%20%2B%3D%20i%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20return%20res%3B%0A%7D%0A%0AsumPrimes(10)%3B%0A).
+
 For more details please visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
 
 <!-- 
