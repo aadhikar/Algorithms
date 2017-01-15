@@ -55,6 +55,8 @@
 
 * [spinalTapCase](https://www.freecodecamp.com/challenges/Spinal%20Tap%20Case?solution=%0Afunction%20spinalCase(str)%20%7B%0A%20%20%2F%2F%20%22It%27s%20such%20a%20fine%20line%20between%20stupid%2C%20and%20clever.%22%0A%20%20%2F%2F%20--David%20St.%20Hubbins%0A%20%20str%20%3D%20str.replace(%2F(%5Ba-z%5D)(%5BA-Z%5D)%2Fg%2C%20%27%241%20%242%27)%3B%0A%20%20return%20str.toLowerCase().replace(%2F%5Cs%2B%7C_%2B%2Fg%2C%20%27-%27)%3B%0A%7D%0A%0AspinalCase(%27This%20Is%20Spinal%20Tap%27)%3B%0A).
 
+* [sumAllOddFibonacciNumbers](https://www.freecodecamp.com/challenges/Sum%20All%20Odd%20Fibonacci%20Numbers?solution=%0Afunction%20sumFibs(num)%20%7B%0A%20%20var%20prev%20%3D%200%3B%0A%20%20var%20curr%20%3D%201%3B%0A%20%20var%20temp%20%3D%200%3B%0A%20%20var%20result%20%3D%200%3B%0A%20%20if%20(num%20%3D%3D%3D%201)%20%7B%0A%20%20%20%20result%20%3D%201%3B%0A%20%20%7D%20else%20%7B%0A%20%20%20%20while%20(temp%20%3C%3D%20num)%20%7B%0A%20%20%20%20%20%20if%20(curr%20%25%202%20%3D%3D%3D%201)%20%7B%0A%20%20%20%20%20%20%20%20result%20%2B%3D%20curr%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20temp%20%3D%20curr%20%2B%20prev%3B%0A%20%20%20%20%20%20prev%20%3D%20curr%3B%0A%20%20%20%20%20%20curr%20%3D%20temp%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%20%20return%20result%3B%0A%7D%0A%0AsumFibs(4)%3B%0A).
+
 For more details please visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
 
 <!-- 
