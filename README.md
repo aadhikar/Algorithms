@@ -61,6 +61,8 @@
 
 * [smallestCommonMultiple](https://www.freecodecamp.com/challenges/Smallest%20Common%20Multiple?solution=%0Afunction%20smallestCommons(arr)%20%7B%0A%20%20var%20startVal%20%3D%20Math.min.apply(null%2C%20arr)%3B%0A%20%20var%20endVal%20%3D%20Math.max.apply(null%2C%20arr)%3B%0A%20%20var%20findLcmForArr%20%3D%20%5B%5D%3B%0A%0A%20%20for%20(var%20i%20%3D%20startVal%3B%20i%20%3C%3D%20endVal%3B%20i%2B%2B)%20%7B%0A%20%20%20%20findLcmForArr.push(i)%0A%20%20%7D%0A%0A%20%20function%20gcd(a%2C%20b)%20%7B%0A%20%20%20%20return%20!b%20%3F%20a%20%3A%20gcd(b%2C%20a%20%25%20b)%3B%0A%20%20%7D%0A%0A%20%20function%20lcm(a%2C%20b)%20%7B%0A%20%20%20%20return%20(a%20*%20b)%20%2F%20gcd(a%2C%20b)%3B%0A%20%20%7D%0A%0A%20%20var%20multiple%20%3D%20startVal%3B%0A%20%20findLcmForArr.map(function(n)%20%7B%0A%20%20%20%20multiple%20%3D%20lcm(multiple%2C%20n)%3B%0A%20%20%20%20return%20multiple%3B%0A%20%20%7D)%3B%0A%20%20return%20multiple%3B%0A%7D%0A%0A%0AsmallestCommons(%5B1%2C5%5D)%3B%0A).
 
+* [findersKeepers ](https://www.freecodecamp.com/challenges/finders-keepers#?solution=%0Afunction%20findElement(arr%2C%20func)%20%7B%0A%20%20var%20num%20%3D%20%5B%5D%3B%0A%0A%20%20arr.filter(function(val)%20%7B%0A%20%20%20%20if%20(func(val))%20%7B%0A%20%20%20%20%20%20num.push(val)%3B%0A%20%20%20%20%7D%0A%20%20%7D)%3B%0A%20%20return%20num%5B0%5D%3B%0A%7D%0A%0AfindElement(%5B1%2C%202%2C%203%2C%204%5D%2C%20function(num)%7B%20return%20num%20%25%202%20%3D%3D%3D%200%3B%20%7D)%3B%0A).
+
 For more details please visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
 
 <!-- 
