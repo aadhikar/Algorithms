@@ -65,6 +65,8 @@
 
 * [dropIt ](https://www.freecodecamp.com/challenges/Drop%20it?solution=%0Afunction%20dropElements(arr%2C%20func)%20%7B%0A%20%20%2F%2F%20Drop%20them%20elements.%0A%20%20var%20res%20%3D%20%5B%5D%3B%0A%20%20arr.findIndex(function(val)%20%7B%0A%20%20%20%20if%20(func(arr%5B0%5D))%20%7B%0A%20%20%20%20%20%20return%20false%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20arr.shift()%3B%0A%20%20%20%20%7D%0A%20%20%7D)%3B%0A%20%20return%20arr%3B%0A%7D%0A%0AdropElements(%5B1%2C%202%2C%203%5D%2C%20function(n)%20%7Breturn%20n%20%3C%203%3B%20%7D)%3B%0A).
 
+* [steamroller](https://www.freecodecamp.com/challenges/Steamroller?solution=%0Afunction%20steamrollArray(arr)%20%7B%0A%20%20%2F%2F%20I%27m%20a%20steamroller%2C%20baby%0A%20%20return%20arr.reduce(function(prev%2C%20curr)%20%7B%0A%20%20%20%20return%20prev.concat(Array.isArray(curr)%20%3F%20steamrollArray(curr)%20%3A%20curr)%3B%0A%20%20%7D%2C%20%5B%5D)%3B%0A%7D%0A%0AsteamrollArray(%5B1%2C%20%5B2%5D%2C%20%5B3%2C%20%5B%5B4%5D%5D%5D%5D)%3B%0A).
+
 For more details please visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
 
 <!-- 
