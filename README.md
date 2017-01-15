@@ -63,6 +63,8 @@
 
 * [findersKeepers ](https://www.freecodecamp.com/challenges/finders-keepers#?solution=%0Afunction%20findElement(arr%2C%20func)%20%7B%0A%20%20var%20num%20%3D%20%5B%5D%3B%0A%0A%20%20arr.filter(function(val)%20%7B%0A%20%20%20%20if%20(func(val))%20%7B%0A%20%20%20%20%20%20num.push(val)%3B%0A%20%20%20%20%7D%0A%20%20%7D)%3B%0A%20%20return%20num%5B0%5D%3B%0A%7D%0A%0AfindElement(%5B1%2C%202%2C%203%2C%204%5D%2C%20function(num)%7B%20return%20num%20%25%202%20%3D%3D%3D%200%3B%20%7D)%3B%0A).
 
+* [dropIt ](https://www.freecodecamp.com/challenges/Drop%20it?solution=%0Afunction%20dropElements(arr%2C%20func)%20%7B%0A%20%20%2F%2F%20Drop%20them%20elements.%0A%20%20var%20res%20%3D%20%5B%5D%3B%0A%20%20arr.findIndex(function(val)%20%7B%0A%20%20%20%20if%20(func(arr%5B0%5D))%20%7B%0A%20%20%20%20%20%20return%20false%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20arr.shift()%3B%0A%20%20%20%20%7D%0A%20%20%7D)%3B%0A%20%20return%20arr%3B%0A%7D%0A%0AdropElements(%5B1%2C%202%2C%203%5D%2C%20function(n)%20%7Breturn%20n%20%3C%203%3B%20%7D)%3B%0A).
+
 For more details please visit [My Free Code Camp Profile](https://www.freecodecamp.com/aadhikar).
 
 <!-- 
